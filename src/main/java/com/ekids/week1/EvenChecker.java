@@ -9,7 +9,9 @@ public class EvenChecker {
         System.out.print("Enter an integer: ");
         if (scanner.hasNextInt()) {
             int n = scanner.nextInt();
-            // Todo: Your solution goes here:
+
+            if (n % 2 == 0) System.out.print("even");
+            else System.out.print("odd");
 
         } else {
             System.out.println("Please enter a valid integer.");

@@ -9,7 +9,10 @@ public class MobReaction {
         System.out.print("Enter a mob name: ");
         if (scanner.hasNextLine()) {
             String mob = scanner.nextLine().trim();
-            // Todo: Your solution goes here:
+
+            if (mob.equals("creeper")) System.out.print("run");
+            else if (mob.equals("zombie")) System.out.print("attack");
+            else System.out.print("stay");
 
         } else {
             System.out.println("Please enter a valid mob name.");
